@@ -14,7 +14,7 @@ public class Calenders {
 
     public int[] cal_yaer(int year) {
 
-        int Cyear = year + 543;
+        int Cyear = year - 543;
         int Leapyear = 0;
         if (Cyear % 4 == 0 && Cyear % 100 == 0 && Cyear % 400 == 0) {
             Leapyear = 366;
@@ -50,15 +50,16 @@ public class Calenders {
         days = day + days;
 
         // cal for week
-        double week = days / 7;
-        Math.ceil(week);
+        double new_days = days;
+        double week = new_days / 7.0;
+        week = Math.ceil(week);
         int weeks = (int) week;
 
         // for day
 
         String before_y;
         String after_y;
-        // Cyear
+        // Cyear Zeller's rule
         before_y = Cyear.substring(0, 1);
         after_y = Cyear.substring(2, 3);
         int before_ys = Integer.parseInt(before_y);
