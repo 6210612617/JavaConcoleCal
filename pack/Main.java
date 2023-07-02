@@ -30,11 +30,11 @@ public class Main {
         String Cyear = String.valueOf(re[1]);
         String result[] = calender.calculete(days, months, re[0], Cyear);
 
-        System.out.println("this day is : " + result[2]);
-        System.out.println("this count of days is : " + result[0]);
-        System.out.println("this week of year is : " + result[1]);
-        System.out.println("this year is : " + Cyear);
-        System.out.println("this Leapyaer is :" + re[0]);
+        System.out.println("This day is : " + result[2]);
+        System.out.println("Order of days in this yaer is : " + result[0]);
+        System.out.println("Order of week in this year is : " + result[1]);30/5
+        System.out.println("This AD year is : " + Cyear);
+        System.out.println("์Number of days in a year :" + re[0]);
 
     }
 }
